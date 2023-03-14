@@ -26,6 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     border: solid 1px white;
+    height: auto;
 }
 .left {
     display: flex;
@@ -33,7 +34,7 @@ body {
     justify-content: center;
     border: solid 1px blue;
     padding-left: 3%;
-    height: 500px;
+    height: 600px;
     width: 50%;
 }
 .right{
@@ -42,7 +43,9 @@ body {
     justify-content: center;
     align-items: center;
     border: solid 1px green;
+    height: 600px;
     width: 50%;
+    gap: 3%;
 }
 /** TEXT **/
 .left {
