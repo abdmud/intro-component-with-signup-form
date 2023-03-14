@@ -5,7 +5,7 @@
     --green: hsl(154, 59%, 51%);
     --blue: hsl(248, 32%, 49%);
     --darkBlue: hsl(249, 10%, 26%);
-    --grayishBlue: hsl(246, 25%, 77%);
+    --grayishBlue: hsl(252, 3%, 69%);
 }
 
 html {
@@ -28,7 +28,12 @@ body {
     border: solid 1px white;
 }
 .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: solid 1px blue;
+    padding-left: 3%;
+    height: 500px;
     width: 50%;
 }
 .right{
@@ -39,11 +44,39 @@ body {
     border: solid 1px green;
     width: 50%;
 }
-
-/** FORM **/
-.form {
+/** TEXT **/
+.left {
+    color: white;
 }
 
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+}
+.left-text {
+    color: gray;
+    font-size: 20px;
+}
+/** BUBBLE **/
+.bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    border-radius: 10px;
+    color: white;
+    width: 90%;
+    height: 40px;
+}
+/** FORM **/
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+}
 form {
     display: flex;
     justify-content: space-evenly;
@@ -51,10 +84,41 @@ form {
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 15px;
-    background-color: white;
     height: 400px;
 }
 input {
+    border-radius: 5px;
+    border: solid 1px gray;
     width: 80%;
     height: 50px;
+}
+
+/** BUTTON **/
+.claim-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 82%;
+}
+
+/** TERMS **/
+.terms-text {
+    display: flex;
+    justify-content: center;
+    color: var(--grayishBlue);
+    font-size: 12px;
+}
+.red {
+    color: var(--red);
 }
